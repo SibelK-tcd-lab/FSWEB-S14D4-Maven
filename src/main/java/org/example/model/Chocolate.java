@@ -3,13 +3,13 @@ package org.example.model;
 public class Chocolate extends ProductForSale {
     private int cocoaPercentage;
 
-    // TESTİN BEKLEDİĞİ: 3 Parametreli Constructor
+    // Testlerin beklediği 3 parametreli constructor
     public Chocolate(String type, double price, String description) {
         super(type, price, description);
-        this.cocoaPercentage = 0; // Varsayılan bir değer atıyoruz
+        this.cocoaPercentage = 0;
     }
 
-    // SENİN YAZDIĞIN: 4 Parametreli Constructor
+    // Görevde istenen 4 parametreli constructor
     public Chocolate(String type, double price, String description, int cocoaPercentage) {
         super(type, price, description);
         this.cocoaPercentage = cocoaPercentage;
@@ -21,7 +21,7 @@ public class Chocolate extends ProductForSale {
 
     @Override
     public void showDetails() {
-        System.out.println("Type: " + getType() + " Price: " + getPrice() +
-                " Desc: " + getDescription() + " Cocoa: %" + cocoaPercentage);
+        System.out.println("Product: Chocolate | Type: " + getType() + " | Price: " + getPrice() +
+                " | Desc: " + getDescription() + " | Cocoa: %" + cocoaPercentage);
     }
 }

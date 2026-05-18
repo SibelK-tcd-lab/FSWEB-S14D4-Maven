@@ -1,9 +1,14 @@
-import org.example.model.Bread;
-import org.example.model.Chocolate;
-import org.example.model.Coke;
-import org.example.model.ProductForSale;
+package org.example;
+
 import org.example.rpg.Monster;
 import org.example.rpg.Troll;
+import org.example.rpg.Bleedable;
+import org.example.rpg.Poisonable;
+import org.example.model.Chocolate;
+import org.example.model.Coke;
+import org.example.model.Bread;
+import org.example.model.ProductForSale;
+// ... diğer junit importları
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

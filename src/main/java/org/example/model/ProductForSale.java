@@ -5,6 +5,7 @@ public abstract class ProductForSale {
     private double price;
     private String description;
 
+    // Tek constructor (Tüm değişkenleri set eden)
     public ProductForSale(String type, double price, String description) {
         this.type = type;
         this.price = price;
@@ -13,6 +14,7 @@ public abstract class ProductForSale {
 
     public String getType() { return type; }
     public double getPrice() { return price; }
+    public String description() { return description; } // Testlerin beklentisine göre getter ismi
     public String getDescription() { return description; }
 
     public double getSalesPrice(int quantity) {
